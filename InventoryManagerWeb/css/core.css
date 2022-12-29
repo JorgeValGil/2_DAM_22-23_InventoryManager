@@ -1,0 +1,705 @@
+/***** VARIABLES *****/
+:root {
+    --color-naranja: #ffa500;
+    --color-naranja-claro: #ffd890;
+    --color-rojo: #FF0000;
+    --color-rojo-claro: #ff9090;
+    --color-verde-super-claro: #d1ffd1;
+    --color-verde-claro: #74ff74;
+}
+
+
+/***** FONTS *****/
+@font-face {
+    font-family: Bluetea;
+    src: url("../fonts/Bluetea.otf") format("opentype");
+}
+
+@font-face {
+    font-family: ComicBook;
+    src: url("../fonts/ComicBook.otf") format("opentype");
+}
+
+
+/***** HEADER *****/
+header .navbar-brand{
+    font-family: Bluetea;
+}
+
+header span.logo-naranja{
+    color: var(--color-naranja);
+}
+
+header span.logo-rojo{
+    color: var(--color-rojo);
+}
+
+
+/***** BODY *****/
+body{
+    background-image: linear-gradient(to right, #62E5F0, #5EEFE0, #75F6C7, #9BFAA8, #C8FB8A, #F9F871);
+}
+
+
+/***** LOGIN, SIGNUP, LOGOUT, ERROR 404 *****/
+#login .brand_logo_container,
+#signup .brand_logo_container,
+#logout .brand_logo_container,
+#error_404 .brand_logo_container{
+    margin-bottom: 20px;
+}
+
+#login .link-login-logo,
+#signup .link-signup-logo,
+#logout .link-logout-logo,
+#error_404 .link-404-logo{
+    text-decoration: none;
+    font-size: 128px;
+    font-family: Bluetea;
+}
+
+#login .link-login-logo span.logo-naranja,
+#signup .link-signup-logo span.logo-naranja,
+#logout .link-logout-logo span.logo-naranja,
+#error_404 .link-404-logo span.logo-naranja{
+    color: var(--color-naranja);
+}
+
+#login .link-login-logo span.logo-rojo,
+#signup .link-signup-logo span.logo-rojo,
+#logout .link-logout-logo span.logo-rojo,
+#error_404 .link-404-logo span.logo-rojo{
+    color: var(--color-rojo);
+}
+
+#login .input-group-append .input-group-text,
+#signup .input-group-append .input-group-text,
+#logout .input-group-append .input-group-text{
+    height: 100%;
+}
+
+#login .user_card,
+#signup .user_card,
+#logout .user_card,
+#error_404 .contenido{
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#login .login_btn,
+#signup .signup_btn{
+    background-color: var(--color-verde-super-claro);
+}
+
+#login .login_btn:hover,
+#signup .signup_btn:hover{
+    background-color: var(--color-verde-claro);
+}
+
+#login .input-group-text.user-icon,
+#signup .input-group-text.user-icon{
+    background-color: var(--color-naranja-claro);
+}
+
+#login .input-group-text.key-icon,
+#signup .input-group-text.key-icon{
+    background-color: var(--color-rojo-claro);
+}
+
+#login .create-account-container,
+#signup .go-to-login-container{
+    min-height: 40px;
+    margin-top: 30px;
+}
+
+#login .create-account-container .create-account,
+#signup .go-to-login-container a{
+    text-decoration: none;
+    color: black;
+    margin-left: 5px;
+    padding: 5px 10px;
+    background-color: var(--color-verde-super-claro);
+    border-radius: 25px;
+    display: inline-flex;
+    align-items: center;
+    min-width: 120px;
+    justify-content: center;
+}
+
+#login .create-account-container .create-account:hover,
+#signup .go-to-login-container a:hover{
+    border: 1px solid black;
+    background-color: var(--color-verde-claro);
+}
+
+#login .create-account-container span,
+#signup .go-to-login-container span{
+    display: inline-flex;
+    align-items: center;
+}
+
+#logout .contenido p,
+#error_404 .text-comicbook{
+    text-align: center;
+    font-family: ComicBook;
+    font-size: 40px;
+}
+
+#logout .contenido img{
+    max-width: 80%;
+    margin: auto;
+}
+
+#error_404 .contenido{
+    flex-direction: column;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    #login .link-login-logo,
+    #signup .link-signup-logo,
+    #logout .link-logout-logo,
+    #error_404 .link-404-logo{
+        font-size: 40px;
+    }
+    #logout .contenido p,
+    #error_404 .text-comicbook{
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    #login .link-login-logo,
+    #signup .link-signup-logo,
+    #logout .link-logout-logo,
+    #error_404 .link-404-logo{
+        font-size: 80px;
+    }
+    #logout .contenido p,
+    #error_404 .text-comicbook{
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #login .input-group,
+    #signup .input-group,
+    #logout .input-group{
+        max-width: 60%;
+        margin: auto;
+    }
+}
+
+
+/***** INDEX *****/
+#index.row{
+    margin: auto;
+}
+
+#index .general{
+    position: relative;
+    max-width: 90%;
+    min-height: 350px;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+    border: 1px solid black;
+    border-radius: 100px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+    #index .general{
+        max-width: 49%;
+        min-height: 500px;
+        background-size: 75%;
+    }
+    #index .general:hover{
+        background-size: 90%;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+#index .categories{
+    background-image: url("../images/index/categorias.png");
+    background-color: var(--color-rojo-claro);
+}
+
+#index .products{
+    background-image: url("../images/index/productos.png");
+    background-color: var(--color-naranja-claro);
+}
+
+#index .export{
+    background-image: url("../images/index/exportar.png");
+    background-color: var(--color-naranja-claro);
+}
+
+#index .profile{
+    background-image: url("../images/index/profile.png");
+    background-color: var(--color-rojo-claro);
+}
+
+#index .categories .general-title,
+#index .profile .general-title{
+    background-color: var(--color-naranja-claro);
+}
+
+#index .products .general-title,
+#index .export .general-title{
+    background-color: var(--color-rojo-claro);
+}
+
+#index .general .general-title{
+    text-decoration: none;
+    font-size: 28px;
+    padding: 5px 30px;
+    border-radius: 25px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:black;
+}
+
+@media (max-width: 767px) {
+    #index .export,
+    #index .profile .general-title{
+        background-color: var(--color-rojo-claro);
+    }
+    #index .profile,
+    #index .export .general-title{
+        background-color: var(--color-naranja-claro);
+    }
+    #index .general .general-title{
+        font-size: 18px;
+        padding: 0px 10px;
+        border-radius: 10px;
+    }
+}
+
+
+/***** CATEGORIES *****/
+#categories #categories-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#categories #categories-buttons{
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#categories #categories-buttons a{
+    margin: 0px 15px;
+}
+
+#categories #categories-list .card{
+    margin:15px;
+}
+
+#categories #categories-list .card-img-top{
+    max-height:250px;
+    min-height:250px;
+}
+
+#categories #categories-list .card .edit{
+    max-width: 32px;
+    max-height: 32px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#categories #categories-list .card .edit img{
+    max-width: 32px;
+    max-height: 32px;
+}
+
+#categories #categories-list .card .card-title{
+    text-align: center;
+    min-height: 60px;
+}
+
+#categories #categories-list .card .card-text{
+    min-height: 120px;
+}
+
+#categories #categories-list .card .products{
+    width: 100%;
+}
+
+#categories #edit,
+#categories #new,
+#categories #delete{
+    min-width: 50%;
+    max-width: 90%;
+    margin: auto;
+}
+
+#categories #edit h1,
+#categories #new h1,
+#categories #delete h1{
+    width: 100%;
+    text-align: center;
+}
+
+#categories #edit .save_btn,
+#categories #new .new_btn,
+#categories #delete .delete_btn{
+    width: 100%;
+    background-color: var(--color-verde-super-claro);
+}
+
+#categories #delete .delete_btn{
+    width: 100%;
+    background-color: var(--color-rojo-claro);
+}
+
+#categories #edit .save_btn:hover,
+#categories #new .new_btn:hover,
+#categories #delete .delete_btn:hover{
+    background-color: var(--color-verde-claro);
+}
+
+#categories #delete .delete_btn:hover{
+    background-color: var(--color-rojo);
+}
+
+@media (max-width: 767px) {
+    #categories #categories-list .card{
+        margin: 5px 0px;
+        padding:15px;
+        max-width: 95%;
+    }
+    #categories #categories-buttons{
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    #categories #categories-list .card .edit{
+        top: 5px;
+        right: 5px;
+    }
+    #categories #categories-list .card .card-title,
+    #categories #categories-list .card .card-text{
+        min-height: unset;
+    }
+    #categories #categories-list .card .products{
+        width: 60%;
+        margin: auto;
+        display: block;
+    }
+    #categories #categories-list .card .card-body{
+        padding-bottom: 0;
+    }
+    #categories #categories-list .card-img-top{
+        max-height:unset;
+        min-height:unset;
+    }
+}
+
+
+/***** PRODUCTS *****/
+#products #products-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#products #products-buttons{
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#products #products-buttons a{
+    margin: 0px 15px;
+}
+
+#products #products-list .card{
+    margin:15px;
+}
+
+#products #products-list .card .edit{
+    max-width: 32px;
+    max-height: 32px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#products #products-list .card .edit img{
+    max-width: 32px;
+    max-height: 32px;
+}
+
+#products #products-list .card .card-title{
+    text-align: center;
+    min-height: 72px;
+}
+
+#products #products-list .card .card-text{
+    text-align: center;
+}
+
+#products #products-list .card .product{
+    width: 100%;
+}
+
+#products #edit,
+#products #new,
+#products #delete,
+#products #show{
+    min-width: 50%;
+    max-width: 90%;
+    margin: auto;
+}
+
+#products h1{
+    width: 100%;
+    text-align: center;
+}
+
+#products #edit .save_btn,
+#products #new .new_btn,
+#products #delete .delete_btn{
+    width: 100%;
+    background-color: var(--color-verde-super-claro);
+}
+
+#products #delete .delete_btn{
+    width: 100%;
+    background-color: var(--color-rojo-claro);
+}
+
+#products #edit .save_btn:hover,
+#products #new .new_btn:hover,
+#products #delete .delete_btn:hover{
+    background-color: var(--color-verde-claro);
+}
+
+#products #delete .delete_btn:hover{
+    background-color: var(--color-rojo);
+}
+#products #show{
+    display: flex;
+    flex-direction: column;
+}
+#products #show img{
+    margin: auto;
+    max-width: 40%;
+}
+
+#products #show p{
+    padding: 0px 15px;
+}
+
+#products #show .edit{
+    text-decoration: none;
+    color: black;
+}
+
+#products #show .edit .edit_btn{
+    width: 100%;
+    background-color: var(--color-verde-super-claro);
+    margin-bottom: 15px;
+}
+
+#products #show .edit .edit_btn:hover{
+    background-color: var(--color-verde-claro);
+}
+
+#products #products-list .card .card-text .bold,
+#products #show p .bold{
+    font-weight: bold;
+}
+
+@media (max-width: 767px) {
+    #products #show img{
+        margin: unset;
+        max-width: unset;
+    }
+    #products #products-buttons{
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    #products #products-list .card{
+        padding: 15px;
+        max-width: 95%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    #products #products-list .card .edit{
+        top: 5px;
+        right: 5px;
+    }
+    #products #products-list .card .card-title{
+        min-height: unset;
+    }
+    #products #products-list .card .product{
+        width: 60%;
+        margin: auto;
+        display: block;
+    }
+    #products #products-list .card .card-body{
+        padding-bottom: 0;
+    }
+}
+
+
+/***** PROFILE *****/
+
+#profile h1{
+    width: 100%;
+    text-align: center;
+}
+
+#profile .form_container{
+    min-width: 50%;
+    max-width: 90%;
+    margin: auto;
+}
+
+#profile .input-group-append .input-group-text{
+    height: 100%;
+}
+
+#profile .change_password_btn:hover{
+    background-color: var(--color-verde-claro);
+}
+
+#profile .input-group-text.key-icon{
+    background-color: var(--color-naranja-claro);
+}
+
+#profile .input-group-text.key-icon-red{
+    background-color: var(--color-rojo-claro);
+}
+
+#profile .change_password_btn{
+    width: 100%;
+    background-color: var(--color-verde-super-claro);
+}
+
+
+/***** EXTRAS *****/
+#extras.row{
+    margin: auto;
+}
+
+#extras .general{
+    position: relative;
+    max-width: 90%;
+    min-height: 350px;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+    border: 1px solid black;
+    border-radius: 100px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+    #extras .general{
+        max-width: 49%;
+        min-height: 500px;
+        background-size: 75%;
+    }
+    #extras .general:hover{
+        background-size: 90%;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+#extras .categories{
+    background-image: url("../images/index/categorias.png");
+    background-color: var(--color-rojo-claro);
+}
+
+#extras .products{
+    background-image: url("../images/index/productos.png");
+    background-color: var(--color-naranja-claro);
+}
+
+#extras .prestashop{
+    background-image: url("../images/extras/prestashop.png");
+    background-color: var(--color-naranja-claro);
+}
+
+#extras .wordpress{
+    background-image: url("../images/extras/wordpress.png");
+    background-color: var(--color-rojo-claro);
+}
+
+#extras .categories .general-title,
+#extras .wordpress .general-title{
+    background-color: var(--color-naranja-claro);
+}
+
+#extras .products .general-title,
+#extras .prestashop .general-title{
+    background-color: var(--color-rojo-claro);
+}
+
+#extras .general .general-title{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 25px;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:black;
+    text-align: center;
+    min-width: 70%;
+}
+
+@media (max-width: 767px) {
+    #extras .prestashop,
+    #extras .wordpress .general-title{
+        background-color: var(--color-rojo-claro);
+    }
+    #extras .wordpress,
+    #extras .prestashop .general-title{
+        background-color: var(--color-naranja-claro);
+    }
+    #extras .general .general-title{
+        font-size: 14px;
+        padding: 0px 10px;
+        border-radius: 10px;
+    }
+}
+
+
+/***** CP-LIGHTIMG.MIN.JS *****/
+img.cp-lightimg {
+    position:relative;
+    transition:all 300ms;
+    z-index:1001;
+    box-shadow: rgba(0,0,0,0.2)2px 2px 3px;
+}
+
+div.cp-lightoverlay {
+    position:fixed;
+    background: rgba(0,0,0,0.7);
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:1000;
+    opacity:0;
+    transition:all 300ms;
+}
+
+div.cp-lightoverlay.cp-lightoverlay-in {
+    opacity:1;
+}

@@ -1,0 +1,8 @@
+<configuracion>
+    <data>
+        <servidor>localhost</servidor>
+        <bd>inventorymanager</bd>
+        <nombre>root</nombre>
+        <password></password>
+    </data>    
+</configuracion>

@@ -1,0 +1,51 @@
+.acordeon{
+    font-family: sans-serif;
+    margin: 0;
+    position:relative;
+}
+
+.acordeon > dl{
+    margin: 60px auto;
+}
+
+.acordeon dt,
+.acordeon dd{
+    padding: 10px;
+}
+
+.acordeon dd{
+    line-height: 1.6em;
+    margin-left:0
+}
+
+.acordeon dt{
+    background: #efefef;
+    color: #000;
+    border-bottom: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
+    cursor: pointer;
+    background-image: url("img/right.png");
+    background-position: 10px 5px;
+    background-repeat: no-repeat;
+    padding-left: 35px;
+}
+
+.acordeon dt.activo, dt:hover{
+    background: #fff6d3;
+}
+
+.acordeon dt.activo{
+    background-image: url("img/down.png");
+    background-position: 14px 9px;
+    background-repeat: no-repeat;
+    padding-left: 35px;
+
+}
+
+.acordeon input[type="submit"] {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    border-radius: 5px;
+    padding: 3px;
+}

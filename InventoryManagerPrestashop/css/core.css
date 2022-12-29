@@ -1,0 +1,49 @@
+/***** MODULE HEADER *****/
+.module-header {
+    background-color: #ff5757;
+    height: 70px;
+    margin-bottom: 20px;
+    color:#fff;
+}
+
+.module-header .module-title-container {
+    float: left;
+    margin-left: 10px;
+}
+
+.module-header .module-title-container h2 {
+    margin-bottom: 0;
+}
+
+.module-header .module-title-container h3 {
+    margin-top: 0;
+}
+
+
+/***** MENU TAB *****/
+#menuTab {
+    padding: 0;
+    margin: 0;
+}
+
+#menuTab li {
+    float: left;
+    display: inline;
+    padding: 5px;
+    padding-right: 10px;
+    background: #FFF6D3;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #CCCCCC;
+}
+
+
+/***** TAB LIST *****/
+#tabList {
+    clear: left;
+}
+
+#tabList .tabItem {
+    border: 1px solid #CCCCCC;
+    padding: 10px;
+}

@@ -1,0 +1,118 @@
+<resources>
+    <string name="app_name">InventoryManager</string>
+
+
+    <string name="app_name_inventory">Inventory</string>
+    <string name="app_name_manager">Manager</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log In</string>
+    <string name="no_valid_user_data">Error logging in. Incorrect login data.</string>
+
+
+    <string name="welcome">Welcome</string>
+    <string name="go_to_categories">Go to categories</string>
+    <string name="go_to_products">Go to Products</string>
+    <string name="previous">Previous</string>
+
+
+    <string name="categories_label">Categories</string>
+
+    <string name="cat_ordenadores">Ordenadores PC y portátiles</string>
+    <string name="desc_cat_ordenadores">PC, ordenadores portátiles y convertibles 2 en 1.</string>
+    <string name="img_cat_ordenadores">ordenadores</string>
+
+    <string name="cat_smartphones">Móviles libres y Smartphones</string>
+    <string name="desc_cat_smartphones">Móviles y smartphones libres.</string>
+    <string name="img_cat_smartphones">smartphones</string>
+
+    <string name="cat_televisores">Televisores</string>
+    <string name="desc_cat_televisores">Televisores Smart TV.</string>
+    <string name="img_cat_televisores">televisores</string>
+
+    <string name="cat_audio">Audio, Fotografía y Video</string>
+    <string name="desc_cat_audio">Auriculares, cámara réflex, videocámara o altavoces.</string>ç
+    <string name="img_cat_audio">audio</string>
+
+    <string name="cat_perifericos">Periféricos Ordenador</string>
+    <string name="desc_cat_perifericos">Periféricos para ordenador. Monitores, teclados, ratones, altavoces, micrófonos, alfombrillas e impresoras.</string>
+    <string name="img_cat_perifericos">perifericos</string>
+
+    <string name="cat_componentes">Componentes de PC</string>
+    <string name="desc_cat_componentes">Componentes para ordenadores. Placas base, procesadores, tarjetas gráficas, memorias RAM, discos duro, ...</string>
+    <string name="img_cat_componentes">componentes</string>
+
+    <string name="cat_electrodomesticos">Electrodomésticos</string>
+    <string name="desc_cat_electrodomesticos">Electrodomésticos para el hogar, el jardín y la oficina.</string>
+    <string name="img_cat_electrodomesticos">electrodomesticos</string>
+
+    <string name="cat_consolas">Consolas, juegos y PC gaming</string>
+    <string name="desc_cat_consolas">Accesorios gaming para PC. Videoconsolas, juegos y accesorios.</string>
+    <string name="img_cat_consolas">consolas</string>
+
+    <string name="cat_tablets">Tablets y Libros electrónicos</string>
+    <string name="desc_cat_tablets">Tablets, iPad, Ebook o eReader. Accesorios, fundas, carcasas y cargadores.</string>
+    <string name="img_cat_tablets">tablets</string>
+
+    <string name="more_products_category_fragment">See more products of this category</string>
+    <string name="category_no_products">The category has no products</string>
+
+
+    <string name="products_label">Products</string>
+
+    <string name="prod_lenovo_ideapad_1_name">Lenovo IdeaPad 3 15ALC6 AMD Ryzen 7 5700U/16GB/512GB SSD/15.6</string>
+    <string name="prod_lenovo_ideapad_1_reference">10332877</string>
+    <string name="prod_lenovo_ideapad_1_description">Justo el rendimiento que necesitas. ¿Buscas un portátil de gama básica lo suficientemente potente para que te ayude a sacar el trabajo adelante? Echa un vistazo al IdeaPad 3 (15, AMD) de 39,62 cm (15,6"). Los últimos procesadores AMD aumentan el rendimiento, te permiten realizar fácilmente varias tareas a la vez y te ofrecen una extraordinaria experiencia de entretenimiento. Los detalles de diseño bien meditados, como el obturador de seguridad físico de la cámara web, completan el producto.</string>
+
+    <string name="prod_lenovo_ideapad_2_name">Lenovo IdeaPad 3 15ITL6 Intel Core i3-1115G4/8GB/512GB SSD/15.6</string>
+    <string name="prod_lenovo_ideapad_2_reference">10188918</string>
+    <string name="prod_lenovo_ideapad_2_description">Justo el rendimiento que necesitas. ¿Buscas un portátil de gama básica lo suficientemente potente para que te ayude a sacar el trabajo adelante? Echa un vistazo al IdeaPad 3 (15, Intel) de 39,62 cm (15,6"). Los últimos procesadores Intel® Core™ de 11.ª generación aumentan el rendimiento, te permiten realizar fácilmente varias tareas a la vez y te ofrecen una extraordinaria experiencia de entretenimiento. Los detalles de diseño bien meditados, como el obturador de seguridad físico de la cámara web, completan el producto.</string>
+
+    <string name="prod_hp_victus_name">HP Victus 16-e0090ns AMD Ryzen 7 5800H/16GB/512GB SSD/RTX 3050Ti/16.1</string>
+    <string name="prod_hp_victus_reference">10347902</string>
+    <string name="prod_hp_victus_description">Gracias a un procesador AMD, el portátil Victus by HP de 16,1 pulgadas cuenta con todas las características que necesitas para jugar y utilizarlo en tu día a día. Consigue más flexibilidad al jugar con un teclado para videojuegos polivalente y disfruta de una pantalla con frecuencia de actualización y sin tearing. Supera el acaloramiento de cada partida gracias a un sistema de refrigeración que evita el sobrecalentamiento. Gana experiencia de juego más allá de tu hardware con OMEN Gaming Hub.</string>
+
+    <string name="prod_iphone_13_name">Apple iPhone 13 256GB Verde Alpino Libre</string>
+    <string name="prod_iphone_13_reference">10191359</string>
+    <string name="prod_iphone_13_description">Prodigioso Pro. Un sistema de cámaras revolucionario.  Una pantalla con una respuesta tan fluida que cada toque parece magia. El chip más rápido que jamás ha tenido un móvil. Una resistencia extraordinaria. Y la mayor autonomía en un iPhone. Es todo un Pro.</string>
+
+    <string name="prod_samsung_m13_name">Samsung Galaxy M13 Libre Verde 4 GB RAM 128 GB</string>
+    <string name="prod_samsung_m13_reference">10358177</string>
+    <string name="prod_samsung_m13_description">Samsung Galaxy M13 combina un procesador Exynos 850 (8nm) Octa-core de 2.0GHz con una memoria RAM de 4 GB para que puedas disfrutar con mayor eficiencia tus aplicaciones y videojuegos.</string>
+
+    <string name="prod_realme_gt_master_name">Realme GT Master 8GB 5G Libre Gris 8 GB RAM 256 GB</string>
+    <string name="prod_realme_gt_master_reference">585662</string>
+    <string name="prod_realme_gt_master_description">La vida consiste en explorar. Explorar el mundo y a uno mismo. Cada interacción con el mundo es una aventura.</string>
+
+    <string name="prod_xiaomi_redmi_10c_name">Xiaomi Redmi 10C 4/128GB Azul Libre</string>
+    <string name="prod_xiaomi_redmi_10c_reference">10217930</string>
+    <string name="prod_xiaomi_redmi_10c_description">Redmi 10C está equipado con un procesador Snapdragon® 680 con memoria UFS ultrarrápida, una cámara principal de alta resolución de 50MP y cámara para selfies de 5MP, pantalla inmersiva Dot Drop de 6,71", altavoz potente con sonido vibrante, batería de alta capacidad de 5000 mAh (típica) y soporta carga rápida de 18W.</string>
+
+    <string name="prod_realme_narzo_50_name">Realme Narzo 50 4/128GB Azul Libre</string>
+    <string name="prod_realme_narzo_50_reference">10197438</string>
+    <string name="prod_realme_narzo_50_description">l nuevo smartphone Narzo 50 de realme tiene una pantalla de 6,6 pulgadas de 120 Hz, 4GB de RAM y 128 GB de almacenamiento interno, una cámara principal de 50 MP y una batería de 5000 mAh con carga rápida SuperDat 33W.</string>
+
+    <string name="prod_realme_8i_name">Realme 8i 4/64GB Negro Libre</string>
+    <string name="prod_realme_8i_reference">585663</string>
+    <string name="prod_realme_8i_description">realme 8i es el compañero de juego perfecto para ti con su potente procesador MediaTek Helio G96. Este procesador cuenta con ocho potentes núcleos que, sumados a sus 4GB de RAM, proporcionarán una fluidez y funcionamiento perfectos en su gran pantalla de 6.6" y 120Hz.</string>
+
+    <string name="prod_xiaomi_redmi_10_2022_name">Xiaomi Redmi 10 2022 4/128GB Gris Libre</string>
+    <string name="prod_xiaomi_redmi_10_2022_reference">10312728</string>
+    <string name="prod_xiaomi_redmi_10_2022_description">El nuevo Xiaomi Redmi 10 (2022) tiene cuádruple cámara AI de 50MP, altavoces duales, pantalla AdaptativeSync de 6.5" FHD+ DotDisplay de 90Hz, procesador MediaTek Helio G88 de ocho núcleos hasta 2.0GHz y batería de alta capacidad de 5000mAh con carga rápida de 18W.</string>
+
+    <string name="prod_iphone_14_pro_max_name">Apple iPhone 14 Pro Max 256GB Plata Libre</string>
+    <string name="prod_iphone_14_pro_max_reference">10581317</string>
+    <string name="prod_iphone_14_pro_max_description">Llega a tus manos una forma mágica de utilizar el iPhone, combinada con prestaciones de seguridad pensadas para salvar vidas. Y una espectacular cámara de 48 Mpx que consigue un nivel de detalle descomunal. Todo bajo el control del chip más avanzado en un smartphone. ¿Lo ves? Es que no se puede ser más Pro.</string>
+
+    <string name="prod_samsung_s22_ultra_5g_name">Samsung Galaxy S22 Ultra 5G 12/256GB Negro Libre</string>
+    <string name="prod_samsung_s22_ultra_5g_reference">10295183</string>
+    <string name="prod_samsung_s22_ultra_5g_description">Samsung Galaxy S22 Ultra 5G. Un nuevo épico estándar para cada momento en tu vida, con pantalla Dynamic AMOLED x2 de 6.8" QHD+, 5 cámaras de alta resolución y calidad profesional, un procesador todopoderoso de solo 4 nm y un atrevido diseño Premium con 4 nuevos colores. Galaxy S22 Ultra 5G es el primer Galaxy S en incluir el S Pen de manera gratuita en a caja.</string>
+
+
+    <string name="reference_product_fragment">Reference: </string>
+    <string name="units">Units</string>
+    <string name="price">Price</string>
+    <string name="more_products_category_product_fragment">See more products of category: </string>
+
+
+</resources>

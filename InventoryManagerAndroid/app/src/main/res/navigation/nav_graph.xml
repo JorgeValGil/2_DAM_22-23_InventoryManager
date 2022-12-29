@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/LoginFragment">
+
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.example.inventorymanager.LoginFragment"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_LoginFragment_to_MenuFragment"
+            app:destination="@id/MenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/MenuFragment"
+        android:name="com.example.inventorymanager.MenuFragment"
+        tools:layout="@layout/fragment_menu">
+        <argument
+            android:name="username"
+            android:defaultValue=""
+            app:argType="string" />
+        <action
+            android:id="@+id/action_MenuFragment_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+        <action
+            android:id="@+id/action_MenuFragment_to_CategoriesFragment"
+            app:destination="@id/CategoriesFragment" />
+        <action
+            android:id="@+id/action_MenuFragment_to_ProductsFragment"
+            app:destination="@id/ProductsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/CategoriesFragment"
+        android:name="com.example.inventorymanager.CategoriesFragment"
+        android:label="@string/categories_label"
+        tools:layout="@layout/fragment_categories">
+        <action
+            android:id="@+id/action_CategoriesFragment_to_CategoryFragment"
+            app:destination="@id/CategoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/CategoryFragment"
+        android:name="com.example.inventorymanager.CategoryFragment"
+        tools:layout="@layout/fragment_category">
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="id"
+            app:argType="string" />
+        <argument
+            android:name="image"
+            app:argType="string" />
+        <argument
+            android:name="description"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_CategoryFragment_to_ProductsComputerFragment"
+            app:destination="@id/ProductsComputerFragment" />
+        <action
+            android:id="@+id/action_CategoryFragment_to_ProductsSmartphonesFragment"
+            app:destination="@id/ProductsSmartphonesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ProductsFragment"
+        android:name="com.example.inventorymanager.ProductsFragment"
+        android:label="@string/products_label"
+        tools:layout="@layout/fragment_products">
+        <action
+            android:id="@+id/action_ProductsFragment_to_ProductFragment"
+            app:destination="@id/ProductFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ProductFragment"
+        android:name="com.example.inventorymanager.ProductFragment"
+        tools:layout="@layout/fragment_product">
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="id"
+            app:argType="string" />
+        <argument
+            android:name="image"
+            app:argType="string" />
+        <argument
+            android:name="reference"
+            app:argType="string" />
+        <argument
+            android:name="description"
+            app:argType="string" />
+        <argument
+            android:name="category_name"
+            app:argType="string" />
+        <argument
+            android:name="price"
+            app:argType="string" />
+        <argument
+            android:name="units"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_ProductFragment_to_ProductsComputerFragment"
+            app:destination="@id/ProductsComputerFragment" />
+        <action
+            android:id="@+id/action_ProductFragment_to_ProductsSmartphonesFragment"
+            app:destination="@id/ProductsSmartphonesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ProductsComputerFragment"
+        android:name="com.example.inventorymanager.ProductsComputerFragment"
+        tools:layout="@layout/fragment_products">
+        <action
+            android:id="@+id/action_ProductsComputerFragment_to_ProductFragment"
+            app:destination="@id/ProductFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ProductsSmartphonesFragment"
+        android:name="com.example.inventorymanager.ProductsSmartphonesFragment"
+        tools:layout="@layout/fragment_products">
+        <action
+            android:id="@+id/actionProductsSmartphonesFragmentToProductFragment"
+            app:destination="@id/ProductFragment" />
+    </fragment>
+</navigation>
